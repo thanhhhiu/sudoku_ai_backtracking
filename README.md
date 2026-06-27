@@ -1,143 +1,247 @@
-# 🧩 TEAM03 - SUDOKU AI PROJECT
+# 🧩 TEAM03 - SUDOKU AI SOLVER
 
-## 📌 Giới thiệu
+<div align="center">
 
-Dự án xây dựng hệ thống giải bài toán Sudoku bằng thuật toán Backtracking trong lĩnh vực Trí tuệ Nhân tạo.
+# 🤖 SUDOKU AI
 
-Chương trình cho phép người dùng nhập vào một bảng Sudoku chưa hoàn chỉnh và tự động tìm lời giải hợp lệ dựa trên phương pháp tìm kiếm quay lui (Backtracking Search).
+### Ứng dụng Trí tuệ Nhân tạo giải Sudoku bằng Backtracking & MRV
 
----
+![AI](https://img.shields.io/badge/Artificial-Intelligence-blue)
+![Algorithm](https://img.shields.io/badge/Algorithm-Backtracking-green)
+![Heuristic](https://img.shields.io/badge/Heuristic-MRV-orange)
+![Language](https://img.shields.io/badge/Language-JavaScript-yellow)
 
-## 🚀 Demo
+*Môn học: Nhập môn Trí tuệ Nhân tạo*
 
-👉 Link website: *(Cập nhật sau khi deploy)*
-
-👉 Video demo: *(Cập nhật sau)*
-
-👉 Source code: *(Cập nhật sau)*
-
----
-
-## 🛠️ Công nghệ sử dụng
-
-* HTML, CSS, JavaScript
-* Python
-* Thuật toán Backtracking
-* GitHub để quản lý mã nguồn
-* Firebase Hosting / Render (nếu triển khai trực tuyến)
+</div>
 
 ---
 
-## 📖 Mô tả bài toán
+## 📖 Giới thiệu
 
-Sudoku là trò chơi điền số trên bảng 9x9, được chia thành 9 ô vuông nhỏ 3x3.
+Sudoku AI là dự án ứng dụng các kỹ thuật tìm kiếm trong Trí tuệ Nhân tạo để giải bài toán Sudoku 9x9.
 
-Mục tiêu là điền các số từ 1 đến 9 sao cho:
+Hệ thống cho phép người dùng:
 
-* Mỗi hàng chứa đủ các số từ 1 đến 9 và không lặp lại.
-* Mỗi cột chứa đủ các số từ 1 đến 9 và không lặp lại.
-* Mỗi vùng 3x3 chứa đủ các số từ 1 đến 9 và không lặp lại.
+* 🧩 Tự nhập đề Sudoku
+* 🤖 Quan sát AI giải bài toán
+* ⚡ Theo dõi quá trình suy luận từng bước
+* 📊 Thống kê số lần quay lui (Backtracking)
+* 📝 Lưu lịch sử giải bài
 
----
-
-## 🧠 Thuật toán sử dụng
-
-### Backtracking
-
-Backtracking là thuật toán tìm kiếm theo chiều sâu (Depth First Search).
-
-Nguyên lý hoạt động:
-
-1. Tìm một ô trống trong bảng Sudoku.
-2. Thử điền các giá trị từ 1 đến 9.
-3. Kiểm tra tính hợp lệ của giá trị vừa điền.
-4. Nếu hợp lệ, tiếp tục giải các ô còn lại.
-5. Nếu không tìm được lời giải, quay lui (backtrack) và thử giá trị khác.
-6. Lặp lại cho đến khi tìm được lời giải hoàn chỉnh.
-
-### Ưu điểm
-
-✅ Dễ cài đặt
-
-✅ Tìm được lời giải chính xác
-
-✅ Phù hợp với các bài toán ràng buộc (Constraint Satisfaction Problem)
-
-### Nhược điểm
-
-❌ Thời gian xử lý tăng với các bài Sudoku khó
-
-❌ Có thể phải thử rất nhiều trạng thái trước khi tìm được lời giải
+Mục tiêu của dự án là minh họa cách một AI Agent sử dụng thuật toán tìm kiếm để giải quyết bài toán ràng buộc (Constraint Satisfaction Problem).
 
 ---
 
-## 📷 Giao diện
+## 🎯 Mục tiêu đề tài
 
-### Trang nhập Sudoku
-
-* Nhập dữ liệu Sudoku 9x9
-* Kiểm tra dữ liệu đầu vào
-
-### Trang kết quả
-
-* Hiển thị lời giải Sudoku
-* Thời gian thực thi thuật toán
-
-### Minh họa thuật toán
-
-* Hiển thị quá trình Backtracking
-* Các bước thử và quay lui
+* Nghiên cứu bài toán Sudoku dưới góc nhìn AI.
+* Áp dụng thuật toán Backtracking.
+* Tối ưu tìm kiếm bằng heuristic MRV.
+* Trực quan hóa quá trình suy luận của AI.
+* Đánh giá hiệu quả của các kỹ thuật tìm kiếm.
 
 ---
 
-## ⚙️ Chức năng chính
+## 🧠 Kiến thức Trí tuệ Nhân tạo áp dụng
 
-🧩 Nhập bảng Sudoku từ người dùng
+| Nội dung                              | Mô tả                                |
+| ------------------------------------- | ------------------------------------ |
+| State Space Search                    | Tìm kiếm trong không gian trạng thái |
+| Constraint Satisfaction Problem (CSP) | Bài toán thỏa mãn ràng buộc          |
+| Depth First Search (DFS)              | Tìm kiếm theo chiều sâu              |
+| Backtracking                          | Quay lui để tìm lời giải             |
+| Heuristic Search                      | Tìm kiếm có hướng dẫn                |
+| MRV                                   | Chọn biến có ít giá trị khả thi nhất |
 
-🤖 Giải Sudoku bằng thuật toán Backtracking
+---
 
-✅ Kiểm tra tính hợp lệ của lời giải
+## ⚙️ Thuật toán sử dụng
 
-📊 Hiển thị thời gian thực thi
+### 🔍 Backtracking
 
-📋 Hiển thị kết quả trực quan
+Backtracking là kỹ thuật tìm kiếm theo chiều sâu.
+
+Quy trình:
+
+1. Tìm một ô trống.
+2. Thử giá trị từ 1 → 9.
+3. Kiểm tra tính hợp lệ.
+4. Nếu hợp lệ tiếp tục giải.
+5. Nếu thất bại quay lui.
+6. Thử giá trị khác cho đến khi tìm được lời giải.
+
+---
+
+### ⚡ MRV (Minimum Remaining Values)
+
+MRV là heuristic giúp AI chọn ô tiếp theo thông minh hơn.
+
+Thay vì chọn ngẫu nhiên:
+
+✅ Chọn ô có ít khả năng nhất
+
+✅ Giảm số nhánh tìm kiếm
+
+✅ Giảm số lần Backtracking
+
+✅ Tăng tốc độ giải Sudoku
+
+---
+
+## ✨ Chức năng nổi bật
+
+### 👤 Người dùng
+
+* Nhập bảng Sudoku 9x9
+* Tự giải Sudoku
+* Kiểm tra nước đi
+* Xem đáp án
+
+### 🤖 AI Solver
+
+* Giải Sudoku tự động
+* Hiển thị từng bước suy luận
+* Mô phỏng quá trình tìm kiếm
+* Điều chỉnh tốc độ AI
+
+### 📊 Thống kê
+
+* Số bước thực hiện
+* Số lần Backtracking
+* Thời gian xử lý
+* Lịch sử các lần giải
+
+---
+
+## 🏗️ Kiến trúc hệ thống
+
+```text
+Người dùng
+      │
+      ▼
+Giao diện Web
+(HTML/CSS/JS)
+      │
+      ▼
+Sudoku Engine
+      │
+ ┌────┴────┐
+ ▼         ▼
+MRV   Backtracking
+      │
+      ▼
+Kết quả Sudoku
+```
 
 ---
 
 ## 📂 Cấu trúc dự án
 
 ```text
-Sudoku-AI/
+DoAn_TriTueNhanTao
 │
-├── .DS.Store
 ├── index.html
-├── logic.js
 ├── style.css
+├── logic.js
 ├── ui.js
-├── images/
+│
+├── images
+│   ├── bg.jpg
+│   ├── bien.jpeg
+│   ├── nuituyet.jpeg
+│   └── Rungsuong.jpeg
 │
 └── README.md
 ```
 
 ---
 
-## 🎯 Kiến thức Trí tuệ Nhân tạo áp dụng
+## 🚀 Hướng dẫn chạy chương trình
 
-* State Space Search
-* Constraint Satisfaction Problem (CSP)
-* Depth First Search (DFS)
-* Backtracking Algorithm
-* Problem Solving Agent
+### 1. Clone repository
+
+```bash
+git clone <repository-link>
+```
+
+### 2. Mở dự án
+
+```bash
+cd DoAn_TriTueNhanTao
+```
+
+### 3. Chạy chương trình
+
+Mở file:
+
+```text
+index.html
+```
+
+bằng trình duyệt bất kỳ:
+
+* Google Chrome
+* Microsoft Edge
+* Firefox
+
+---
+
+## 📷 Giao diện chương trình
+
+### 🏠 Trang chính
+
+* Nhập dữ liệu Sudoku
+* Chọn chế độ giải
+
+### 🤖 AI Simulation
+
+* Hiển thị từng bước AI suy luận
+* Quan sát quá trình Backtracking
+
+### 📊 Kết quả
+
+* Bảng Sudoku hoàn chỉnh
+* Thống kê hiệu năng thuật toán
+
+---
+
+## 📈 Kết quả đạt được
+
+✅ Xây dựng thành công hệ thống giải Sudoku
+
+✅ Áp dụng Backtracking vào bài toán CSP
+
+✅ Tích hợp heuristic MRV
+
+✅ Trực quan hóa quá trình suy luận của AI
+
+✅ Hỗ trợ người dùng theo dõi hoạt động của thuật toán
 
 ---
 
 ## 👥 Thành viên nhóm
 
-| Họ và tên          | MSSV              |
-| ------------------ | ----------------- |
-| Nguyễn Hà Tiến Đạt | 2474802010077     |
-| Nguyễn Bảo Lâm     | 2474802010209     |
-| Bùi Thanh Hiếu     | *(Cập nhật MSSV)* |
+| Họ và tên          | MSSV          |
+| ------------------ | ------------- |
+| Nguyễn Hà Tiến Đạt | 2474802010077 |
+| Nguyễn Bảo Lâm     | 2474802010209 |
+| Bùi Thanh Hiếu     | ...           |
 
 ---
 
+## 🎓 Môn học
+
+**Nhập môn Trí tuệ Nhân tạo**
+
+Khoa Công nghệ Thông tin
+
+---
+
+<div align="center">
+
+### 🌟 TEAM03 - SUDOKU AI SOLVER 🌟
+
+*"Applying Artificial Intelligence to Solve Sudoku Efficiently"*
+
+</div>
