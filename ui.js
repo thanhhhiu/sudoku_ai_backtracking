@@ -79,7 +79,7 @@ async function fetchSudokuFromAPI(difficulty) {
     const originalText = btnNewGame ? btnNewGame.innerText : "GAME MỚI";
 
     try {
-        if (btnNewGame) { btnNewGame.innerText = "⏳ Đang tải..."; btnNewGame.disabled = true; }
+        if (btnNewGame) { btnNewGame.innerText = " Đang tải..."; btnNewGame.disabled = true; }
         
         let apiDiff = difficulty === "1" ? "easy" : (difficulty === "2" ? "easy" : (difficulty === "3" ? "medium" : "hard"));
         const response = await fetch(`https://sugoku.onrender.com/board?difficulty=${apiDiff}`);
@@ -536,8 +536,10 @@ if (btnDarkMode) {
 const bgSelector = document.getElementById('bg-selector');
 if (bgSelector) {
     bgSelector.addEventListener('change', (e) => {
-        if (e.target.value === "bg.jpg") document.body.style.backgroundImage = "url('bg.jpg')";
-        else document.body.style.backgroundImage = `url('${e.target.value}')`;
+       if (e.target.value === "images/bg.jpg") 
+    document.body.style.backgroundImage = "url('images/bg.jpg')";
+    else 
+    document.body.style.backgroundImage = `url('${e.target.value}')`;
     });
 }
 
