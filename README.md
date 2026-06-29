@@ -1,4 +1,4 @@
-# 🧩 TEAM03 - SUDOKU AI SOLVER
+# 🧩 TEAM04 - SUDOKU AI SOLVER
 
 <div align="center">
 
@@ -240,7 +240,7 @@ Khoa Công nghệ Thông tin
 
 <div align="center">
 
-### 🌟 TEAM03 - SUDOKU AI SOLVER 🌟
+### 🌟 TEAM04 - SUDOKU AI SOLVER 🌟
 
 *"Applying Artificial Intelligence to Solve Sudoku Efficiently"*
 
