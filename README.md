@@ -1,4 +1,7 @@
+<div align="center">
+
 # 🧩 TEAM04 - SUDOKU AI SOLVER
+
 <div align="center">
 
 # 🤖 SUDOKU AI
